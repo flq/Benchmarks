@@ -1,7 +1,8 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-using BenchmarkDotNet.Running;
+﻿using BenchmarkDotNet.Running;
 using Benchmarks;
 
 Console.WriteLine("Hello, World!");
-BenchmarkRunner.Run<IsNullOrEmptyComparison>();
+
+// var isssit = "hello".AsSpan().IsPalindrome();
+// Console.WriteLine(isssit);
+BenchmarkRunner.Run<Palindrome>();
